@@ -1,0 +1,442 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'American Typewriter';
+    src: url(font/american-typewriter-cufonfonts/ufonts.com_american-typewriter.ttf);
+    src: url(font/american-typewriter-cufonfonts/ufonts.com_american-typewriter-bold.ttf);
+    src: url(font/american-typewriter-cufonfonts/ufonts.com_american-typewriter-condensed-bold.ttf);
+    src: url(font/american-typewriter-cufonfonts/ufonts.com_american-typewriter-condensed-light.ttf);
+    src: url(font/american-typewriter-cufonfonts/ufonts.com_american-typewriter-condensed.ttf);
+    src: url(font/american-typewriter-cufonfonts/ufonts.com_american-typewriter-light.ttf);
+
+    font-family: 'Roboto';
+    src: url(font/Roboto/Roboto-Regular.ttf);
+    src: url(font/Roboto/Roboto-Light.ttf);
+}
+body {
+
+}
+/*
+.left-purple {
+    width: 50%;
+    height: 100vh;
+    background-color: #C0B2FF;
+    float: left;
+
+} 
+
+.right-pink {
+    width: 50%;
+    height: 100vh;
+    background-color: #FFD3DA;
+    float: right;
+} */
+
+/* FIRST PAGE */
+.color-bg {
+    background-image: url(assets/background-color.svg);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+}
+.white-center {
+    background-color: white;
+    width: 70%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 65px;
+    color: #7254F7;
+}
+.index-img {
+    background-image: url(assets/index-background.svg);
+    background-position: center;
+}
+
+.title {
+    font-size: 50pt;
+    font-family: 'american typewriter';
+    font-weight: 200;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center;
+}
+.intro {
+    font-size: 16pt;
+    font-family: 'roboto';
+    font-weight: 100;
+    margin-top: 0;
+    letter-spacing: 5pt;
+    color: white;
+    text-align: center;
+}
+
+.menu {
+    margin-top: 20px;
+    width: 100vw;
+    height: 50px;
+    font-weight: 100;
+    background-color: #7254F6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+.menu-title {
+    text-decoration: none;
+    color: white;
+    font-size: 16pt;
+    padding-right: 30px;
+    font-family: 'american typewriter';
+    font-weight: 100;
+    letter-spacing: 3pt;
+}
+.active {
+    font-weight: 700;
+}
+
+.logo {
+    width: 70px;
+    margin: auto;
+    display: block;
+    padding-top: 5px;
+}
+.icons-container {
+    width: 120px;
+    margin-right: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: 1px solid red;
+}
+.menu-icons {
+    width: 15%;
+}
+
+
+
+/* SECOND PAGE */
+.contact-text {
+    color: black;
+    font-family: 'roboto';
+    font-weight: 300;
+    width: 80%;
+    text-decoration: none;
+}
+.subtitle {
+    font-size: 20pt;
+    font-family: 'american typewriter';
+    font-weight: 300;
+    letter-spacing: 3pt;
+}
+.contact-bg {
+    background-image: url(assets/contact-bg.svg);
+    background-position: center;
+}
+
+.contact-item {
+    width: 423px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+}
+.contact-img {
+    width: 6%;
+}
+
+/* 3rd page */
+.intro-img {
+    background-image: url(assets/о-нас.png);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-big {
+    font-size: 40pt;
+    color: #7254F7;
+    font-family: 'American typewriter';
+    font-weight: 600;
+    letter-spacing: 3pt;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.quote {
+    font-size: 30pt;
+    color: #C0B2FF;
+    text-align: center;
+    height: 300px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'American typewriter';
+    font-weight: 100;
+}
+
+.about-bg {
+    background-image: url(assets/about-1img.svg);
+    background-position: center;
+    height: 500px;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title-white {
+    color: white;
+    font-size: 26pt;
+    letter-spacing: 3pt;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    border-left: 3px solid transparent;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-family: 'american typewriter';
+    font-weight: 300;
+
+    transition: all 1s ease-in-out;
+}
+
+.title-white:hover {
+    border-left: 3px solid white;
+    border-bottom: 3px solid transparent;
+}
+
+
+.services-container {
+    width: 80%;
+    margin: auto;
+}
+.services-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.services-img {
+    /*min-width: 50px; */
+    margin-right: 30px;
+}
+.services-description {
+    width: 400px;
+}
+.smalltitle {
+    font-size: 16pt;
+    color: #7254F7;
+    margin-bottom: 0;
+    font-family: 'american typewriter';
+    font-weight: 400;
+    letter-spacing: 3pt;
+}
+.services-text {
+    font-size: 14pt;
+    color: white;
+    margin-top: 10px;
+    font-family: 'roboto';
+}
+
+.desc-col {
+    width: 50%;
+}
+.button {
+    background-image: linear-gradient(to right, #C0B2FF , #7254F7);
+    width: 170px;
+    height: 40px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+
+    display: block;
+    margin: auto;
+    font-size: 16pt;
+    margin-top: 50px;
+
+    font-family: 'american typewriter';
+    font-weight: 400;
+    letter-spacing: 2pt;
+
+    transition: all 1s ease-in-out;
+}
+.button:hover {
+    background-position: 170px;
+}
+
+.bg-two {
+    background-image: url(assets/about-2img.svg);
+}
+.aboutus-description {
+    color: white;
+    text-align: center;
+    font-size: 14pt;
+    padding: 10px;
+    width: 50%;
+    font-family: 'roboto';
+}
+
+/* 4th page */
+.services-list {
+    height: 1200px;
+}
+.services {
+    background-image: url(assets/услуги.png);
+}
+
+/* footer */
+footer {
+    border-top: 1px solid #7254F7;
+    width: 100vw;
+    height: 30%;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-content {
+    padding: 30px;
+}
+
+.footer-title {
+    color: #7254F7;
+    font-size: 12pt;
+    letter-spacing: 3pt;
+    font-family: 'American typewriter';
+    font-weight: 600;
+}
+
+.footer-text {
+    color: #6A6A6A;
+    font-size: 11pt;
+    font-weight: 100;
+    font-family: 'roboto';
+    font-weight: 100;
+    text-decoration: none;
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    .menu {
+
+    }
+    .menu-container {
+        overflow: auto;
+        white-space: nowrap;
+        justify-content: space-between;
+        width: 100vw;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .menu-title {
+        font-size: 14pt;
+    }
+
+    .title-big {
+        margin-top: 170px;
+    }
+    .quote {
+        font-size: 26pt;
+        width: 90vw;
+    }
+
+    .about-bg {
+        background-image: url(assets/mobile-bg.svg);
+        flex-direction: column;
+        height: 650px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .title-white {
+        width: auto;
+    }
+    .desc-col {
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .aboutus-description {
+        width: 95%;
+        margin-right: 20px;
+    }
+
+    .bg-two {
+        background-image: url(assets/mobile-bg2.svg);
+    }
+
+    .bg-three {
+        background-image: url(assets/mobile-bg3.svg);
+    }
+
+    .smalltitle {
+        font-size: 14pt;
+    }
+
+    .services-text{
+        font-size: 12px;
+    }
+
+    .services-box {
+
+    }
+
+    .services-list {
+        height: 1500px;
+    }
+    .contacat-list {
+        width: 100%;
+        padding-left: 0;
+    }
+    .color-bg {
+        height: auto;
+    }
+    .white-center {
+        width: 85%;
+        height: 400px;
+        margin-left: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .services-container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-content {
+        padding-left: 10px;
+    }
+}
