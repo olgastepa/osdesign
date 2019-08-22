@@ -55,8 +55,10 @@ body {
     color: #7254F7;
 }
 .index-img {
-    background-image: url(assets/index-background.svg);
+    background-image: url(assets/интро.png);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title {
@@ -144,7 +146,7 @@ body {
     letter-spacing: 3pt;
 }
 .contact-bg {
-    background-image: url(assets/contact-bg.svg);
+    background-image: url(assets/контакты.png);
     background-position: center;
 }
 
@@ -197,12 +199,27 @@ body {
     font-family: 'American typewriter';
     font-weight: 100;
 }
+.quote-new {
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+}
+.quote-new bold {
+    font-size: 14pt;
+    margin-top: 30px;
+}
 
 .about-bg {
     background-image: url(assets/about-1img.svg);
     background-position: center;
     height: 500px;
     width: 100vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
     display: flex;
     align-items: center;
@@ -234,21 +251,21 @@ body {
 
 
 .services-container {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 .services-box {
     display: flex;
-    justify-content: center;
-    align-items: center;
+
     flex-direction: row;
 }
 .services-img {
     /*min-width: 50px; */
-    margin-right: 30px;
+    margin-right: 20px;
+    width: 50px;
 }
 .services-description {
-    width: 400px;
+    width: 100%;
 }
 .smalltitle {
     font-size: 16pt;
@@ -307,10 +324,10 @@ body {
 
 /* 4th page */
 .services-list {
-    height: 1200px;
+    height: auto;
 }
 .services {
-    background-image: url(assets/услуги.png);
+    background-image: url(assets/услуги-дизайн.png);
 }
 
 /* footer */
@@ -349,8 +366,16 @@ footer {
 }
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
-    .menu {
-
+    .index-img {
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    .services {
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    .title {
+        font-size: 40pt;
     }
     .menu-container {
         overflow: auto;
